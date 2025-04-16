@@ -191,27 +191,3 @@ UserWinRate
 
 * Найдите Application в src/main/java
 * Нажмите ▶️ рядом с классом (или Shift+F10 в IntelliJ IDEA)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
