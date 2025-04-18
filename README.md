@@ -179,6 +179,14 @@ UserWinRate
 Необходимые инструменты:
 
 * [Java (JDK) 18](https://github.com/corretto/corretto-18/releases)
+* [PostgreSQL 15](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+Создайте БД в PostgreSQL.
+Настройте подключение к БД (через application.properties). Укажите:
+
+- `spring.datasource.url`
+- `spring.datasource.username`
+- `spring.datasource.password`
 
 ### С помощью командной строки
 
