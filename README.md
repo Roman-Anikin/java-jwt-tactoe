@@ -1,7 +1,7 @@
 # Игра крестики нолики с jwt авторизацией
 
-Технологии: Java 18, Spring Security 5.8, Spring MVC 5.3, Spring Data JPA 3.4, Hibernate 6.5, Tomcat 9, Gradle Kotlin
-DSL.
+Технологии: Java 18, Spring Security 5.8, Spring MVC 5.3, Spring Data JPA 3.4, Hibernate 6.5, PostgreSQL 42.7, Tomcat 9,
+Gradle Kotlin DSL.
 
 ---
 
@@ -179,6 +179,14 @@ UserWinRate
 Необходимые инструменты:
 
 * [Java (JDK) 18](https://github.com/corretto/corretto-18/releases)
+* [PostgreSQL 15](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+Создайте БД в PostgreSQL.
+Настройте подключение к БД (через application.properties). Укажите:
+
+- `spring.datasource.url`
+- `spring.datasource.username`
+- `spring.datasource.password`
 
 ### С помощью командной строки
 
