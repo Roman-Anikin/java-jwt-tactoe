@@ -4,7 +4,6 @@ import datasource.repository.GameRepository;
 import domain.model.CurrentGame;
 import domain.model.UserWinRate;
 import exceptions.game.*;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import security.JwtAuthContextService;
 
@@ -17,11 +16,11 @@ import static domain.service.GameMode.PLAYER;
 @Service
 public class GameServiceImpl implements GameService {
 
-    @Autowired
-    private GameRepository repository;
+    private final GameRepository repository;
     private final JwtAuthContextService jwtAuthContextService;
 
-    public GameServiceImpl(JwtAuthContextService jwtAuthContextService) {
+    public GameServiceImpl(GameRepository repository, JwtAuthContextService jwtAuthContextService) {
+        this.repository = repository;
         this.jwtAuthContextService = jwtAuthContextService;
     }
 
